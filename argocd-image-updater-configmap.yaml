@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-image-updater
+  namespace: argocd
+data:
+  config.yaml: |
+    applications:
+    - name: demo
+      type: kustomize
