@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: demo
-          image: 192.168.1.18:5001/demo:20230413-164102
+          image: 192.168.1.18:5001/demo:latest
 #          repository: http://192.168.1.18:5001/demo
           imagePullPolicy: Always
           ports:
