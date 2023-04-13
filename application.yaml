@@ -6,7 +6,8 @@ metadata:
   annotations:
     argocd-image-updater.argoproj.io/image-list: demo=192.168.1.18:5001/demo
     argocd-image-updater.argoproj.io/write-back-method: git
-    argocd-image-updater.argoproj.io/demo.update-strategy: semver
+    argocd-image-updater.argoproj.io/demo.update-strategy: pattern
+    argocd-image-updater.argoproj.io/demo.pattern: "^[0-9]{8}T[0-9]{6}$" # Update this regex to match your timestamp format
     argocd-image-updater.argoproj.io/update-interval: 1m
 spec:
   project: default
