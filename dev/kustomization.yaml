@@ -4,12 +4,10 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - service.yaml
+  - argocd-image-updater-configmap.yaml
 
 namespace: test
 
 commonLabels:
   app: demo
-configMapGenerator:
-- name: demo-config
-  files:
-  - argocd-image-updater-configmap.yaml
+
