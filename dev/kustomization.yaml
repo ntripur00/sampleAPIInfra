@@ -9,3 +9,7 @@ namespace: test
 
 commonLabels:
   app: demo
+configMapGenerator:
+- name: demo-config
+  files:
+  - argocd-image-updater-configmap.yaml
