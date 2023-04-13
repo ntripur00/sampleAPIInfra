@@ -15,7 +15,7 @@ spec:
     repoURL: https://github.com/ntripur00/sampleAPIInfra.git
     targetRevision: HEAD
     path: dev
-    kustomize: {} # Add specific Kustomize configurations if needed
+    directory: {} # Add this line
   destination:
     server: https://kubernetes.default.svc
     namespace: test
