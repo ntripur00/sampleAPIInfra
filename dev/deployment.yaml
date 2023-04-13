@@ -16,8 +16,6 @@ spec:
         - name: demo
           image: 192.168.1.18:5001/demo:20230412-204821
           imagePullPolicy: Always
-            failureThreshold: 2
-            periodSeconds: 10
           ports:
           - containerPort: 8080
       imagePullSecrets:
