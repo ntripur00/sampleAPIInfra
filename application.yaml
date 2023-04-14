@@ -4,7 +4,7 @@ metadata:
   name: demo
   namespace: test
   annotations:
-    argocd-image-updater.argoproj.io/image-list: demo=ghcr.io/ntripur00/demo
+    argocd-image-updater.argoproj.io/image-list: demo=ghcr.io/ntripur00/demo:
     argocd-image-updater.argoproj.io/write-back-method: git
     argocd-image-updater.argoproj.io/demo.update-strategy: "resourceVersion"  # or "timestamp" // is this correct?
 
