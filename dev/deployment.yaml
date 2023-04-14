@@ -21,7 +21,7 @@ spec:
           ports:
           - containerPort: 8080
       imagePullSecrets:
-        - name: my-registry-credential
+        - name: my-registry-cred
           insecureSkipVerify: true
       env:
         - name: REGISTRY_INSECURE
