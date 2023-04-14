@@ -23,6 +23,7 @@ spec:
       imagePullSecrets:
         - name: my-registry-cred
           insecureSkipVerify: true
+          host: 192.168.1.18:5001
       env:
         - name: REGISTRY_INSECURE
           value: "true"
