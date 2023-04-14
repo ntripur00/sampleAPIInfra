@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: demo
-  namespace: argocd
+  namespace: test
   annotations:
     argocd-image-updater.argoproj.io/image-list: demo=192.168.1.18:5001/demo
     argocd-image-updater.argoproj.io/write-back-method: git
