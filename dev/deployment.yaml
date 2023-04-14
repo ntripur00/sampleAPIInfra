@@ -21,10 +21,10 @@ spec:
           ports:
           - containerPort: 8080
       imagePullSecrets:
-        - name: my-registry-cred
-          insecureSkipVerify: true
-          host: 192.168.1.18:5001
-          repository: "http://192.168.1.18:5001/demo"
+        - name: ghcr-io
+#          insecureSkipVerify: true
+#          host: 192.168.1.18:5001
+#          repository: "http://192.168.1.18:5001/demo"
       env:
         - name: REGISTRY_INSECURE
           value: "true"
