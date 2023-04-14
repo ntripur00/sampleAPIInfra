@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: demo
-          image: 192.168.1.18:5001/demo:20230414-173852
+          image: "http://192.168.1.18:5001/demo:20230414-173852"
 #          repository: http://192.168.1.18:5001/demo
           imagePullPolicy: Always
 #          insecureSkipVerify: true
@@ -24,7 +24,7 @@ spec:
         - name: my-registry-cred
           insecureSkipVerify: true
           host: 192.168.1.18:5001
-          repository: http://192.168.1.18:5001/demo
+          repository: "http://192.168.1.18:5001/demo"
       env:
         - name: REGISTRY_INSECURE
           value: "true"
