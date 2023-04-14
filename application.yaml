@@ -4,7 +4,7 @@ metadata:
   name: demo
   namespace: test
   annotations:
-    argocd-image-updater.argoproj.io/image-list: demo=http://192.168.1.18:5001/demo/tags/list
+    argocd-image-updater.argoproj.io/image-list: demo=http://192.168.1.18:5001/v2/demo/tags/list
     argocd-image-updater.argoproj.io/write-back-method: git
     argocd-image-updater.argoproj.io/demo.update-strategy: name
     argocd-image-updater.argoproj.io/demo.pattern: "^[0-9]{8}-[0-9]{6}$" # Update this regex to match your timestamp format
