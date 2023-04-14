@@ -15,7 +15,7 @@ spec:
       containers:
         - name: demo
           image: 192.168.1.18:5001/demo:20230413-164411
-          repository: 192.168.1.18:5001/demo
+#          repository: 192.168.1.18:5001/demo
           imagePullPolicy: Always
 #          insecureSkipVerify: true
           ports:
@@ -23,3 +23,6 @@ spec:
       imagePullSecrets:
         - name: my-registry-credentials
           insecureSkipVerify: true
+      env:
+        - name: REGISTRY_INSECURE
+          value: "true"
