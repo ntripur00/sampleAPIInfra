@@ -15,11 +15,11 @@ spec:
       containers:
         - name: demo
           image: 192.168.1.18:5001/demo:20230413-164411
-          repository: https://192.168.1.18:5001/demo
+          repository: 192.168.1.18:5001/demo
           imagePullPolicy: Always
-          insecureSkipVerify: true
+#          insecureSkipVerify: true
           ports:
           - containerPort: 8080
       imagePullSecrets:
         - name: my-registry-credentials
-         # insecureSkipVerify: true
+          insecureSkipVerify: true
